@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velez Web-site</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#favorites">Favorites</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p></p>
+                <h1>Hi I'm <span> Joseph Vincent Velez </span><br>From Philippines</h1>
+            </div>
+        </div>
+    </div>
+    <!-----about----->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/choyax.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p><b>Hey there! I'm Joseph Vincent Velez, a passionate and ambitious first-time developer ready to make my mark in the world of technology. I recently embarked on a journey to explore the vast and exciting realm of coding, and I'm absolutely hooked! Learning to code has opened up a whole new world of creativity and problem-solving for me.
+
+                        Every line of code I write feels like a small victory, as I strive to build functional and user-friendly applications. While I'm still new to this field, I'm fueled by my curiosity and desire to constantly learn and improve my skills. I believe that technology has the power to transform lives and make a positive impact on society.
+                        
+                        Aside from coding, I'm a natural problem-solver and enjoy unraveling complex challenges. I'm a firm believer in teamwork and collaboration, as I believe that the best ideas come to life through shared knowledge and different perspectives.
+                        
+                        In my free time, you'll often find me exploring online coding communities, attending webinars, and diving into coding tutorials. It's an exhilarating and ever-evolving journey, and I can't wait to connect with fellow developers, collaborate on exciting projects, and continue growing in this dynamic field.
+                        
+                        If you're as passionate about coding and technology as I am, or if you're looking to embark on your own coding journey, let's connect! I'm eager to learn from others, share my experiences, and make a positive impact in the world through code.
+                        
+                        Remember, this is just an example, and you can personalize it based on your own experiences, goals, and interests as a first-time developer. 
+                        I look forward to getting to know you better!</b></p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('hobbies')">Hobbies</p>
+                        <p class="tab-links" onclick="opentab('education')">Education Attainment</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>I offer professional web development services, crafting custom websites tailored to meet the unique needs of businesses and individuals. 
+                                Whether you need a sleek and modern portfolio site or a robust e-commerce platform, I leverage my skills in HTML, CSS, JavaScript, and various frameworks to create intuitive and visually appealing web experiences.</li>
+                            <li><span>Front-end Development</span><br>I excel in front-end development, transforming design concepts into fully functional and responsive websites or web applications. 
+                                I have a deep understanding of user experience (UX) principles and implement best practices in HTML, CSS, and JavaScript to create intuitive interfaces that captivate users.</li>
+                            <li><span>Mobile App Development</span><br>I specialize in mobile app development, building innovative and user-friendly applications for iOS and Android platforms. 
+                                With a focus on seamless user interfaces and efficient functionality, I utilize technologies like React Native and Flutter to deliver engaging mobile experiences.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="hobbies">
+                        <ul>
+                            <li><span>Playing a Musical Instrument</span><br>I learn to play a musical instrument and create beautiful melodies. 
+                                Whether it's the guitar, piano, violin, or any other instrument, music can be a source of relaxation and self-expression.</li>
+                            <li><span>Writing</span><br> I have a passion for creative writing, and I enjoy crafting compelling narratives and evocative descriptions. 
+                                Whether it's short stories, poetry, or descriptive prose, I can create vivid imagery and engage readers on an emotional level through imaginative storytelling.</li>
+                            <li><span>Reading</span><br>I am proficient in reading digital content, including e-books, online articles, and research papers. 
+                                I can navigate digital platforms and tools effectively, utilizing features such as highlighting, bookmarking, and searching for specific information.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Elementary</span><br>Graduated at Perrelos Elementary School S.Y 2014-2015</li>
+                            <li><span>High School</span><br>Graduated at Perrelos National High School S.Y 2019-2022 </li>
+                            <li><span>College</span><br>Sibonga Community College</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----services----->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Website Development</h2>
+                    <p>I offer professional web development services, crafting custom websites tailored to meet the unique needs of businesses and individuals. 
+                        Whether you need a sleek and modern portfolio site or a robust e-commerce platform, 
+                        I leverage my skills in HTML, CSS, JavaScript, and various frameworks to create intuitive and visually appealing web experiences.</p>
+                    <a href="#" class="btn">Click more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code-branch"></i>
+                    <h2>Mobile Application Development</h2>
+                    <p>I specialize in mobile app development, building innovative and user-friendly applications for iOS and Android platforms. 
+                        With a focus on seamless user interfaces and efficient functionality, 
+                        I utilize technologies like React Native and Flutter to deliver engaging mobile experiences.</p>
+                    <a href="#" class="btn">Click more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>Technical Consultation</h2>
+                    <p>I provide technical consultation services, collaborating with clients to understand their goals and translate them into actionable development strategies. 
+                        I can assess your existing systems, recommend solutions, and guide you through the entire development lifecycle, 
+                        ensuring that your project aligns with industry best practices.</p>
+                    <a href="#" class="btn">Click more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>Maintenance and Support</h2>
+                    <p>I offer ongoing maintenance and support services to ensure the smooth operation of your digital solutions. 
+                        From bug fixes to system updates, I provide timely assistance, keeping your website or application secure, 
+                        up-to-date, and optimized for performance.</p>
+                    <a href="#" class="btn">Click more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----favorites---->
+    <div id="favorites">
+        <div class="container">
+            <h1 class="sub-title">My Favorites Arts</h1>
+            <div class="fav-list">
+                <div class="fav">
+                    <img src="images/fav1.gif">
+                    <div class="layer">
+                        <h3>Yone</h3>
+                        <p>Sleep is not for the weak, but for the blessed
+                            and Sleep is for the guiltless.</p>
+                    </div>
+                </div>
+                <div class="fav">
+                    <img src="images/fav2.gif">
+                    <div class="layer">
+                        <h3>Darius</h3>
+                        <p>Make no mistakes.</p>
+                    </div> 
+                </div>
+                <div class="fav">
+                    <img src="images/fav3.gif">
+                    <div class="layer">
+                        <h3>Zed</h3>
+                    <p>Brave the shadows, find the truth.</p>
+                    </div>
+                </div>
+                <div class="fav">
+                    <img src="images/fav4.gif">
+                    <div class="layer">
+                        <h3>Kaisa</h3>
+                        <p>This skin is fashioned for survival, and honed by instinct.</p>
+                    </div>              
+                </div>
+                <div class="fav">
+                    <img src="images/fav6.gif">
+                    <div class="layer">
+                        <h3>Kaisa</h3>
+                        <p>This suit lives on me. It calls me home. We survive together.</p>
+                    </div>              
+                </div>
+                <div class="fav">
+                    <img src="images/god4.gif">
+                    <div class="layer">
+                        <h3>Irelia</h3>
+                        <p>We are the children of the First Lands; and we will not be slaves!</p>
+                    </div>              
+                </div>
+                <div class="fav">
+                    <img src="images/fav7.gif">
+                    <div class="layer">
+                        <h3>Jhin</h3>
+                        <p>Art requires a certain cruelty</p>
+                    </div>              
+                </div>
+                <div class="fav">
+                    <img src="images/god.gif">
+                    <div class="layer">
+                        <h3>Jhin</h3>
+                        <p>Art is such a fickle thing.</p>
+                    </div>              
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+
+        </div>
+    </div>
+    <!-----Contact Me mommy--->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i></i> Velezvincent72@gmail.com</p>
+                    <p><i class="fa-sharp fa-solid fa-phone-volume"></i> 09913597462</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/vincent.velez16/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/vincent_n16"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.youtube.com/channel/UCys_yPLnvfCGreppJemIVuQ"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <a href="images/yone.mp4" class="btn btn2">Download Yone Flash Art</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="reserved">
+            <p>© VELEZ 2023. All rights reserved</p>
+        </div>
+    </div>
+
+
+    <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    </script>
+    <script>
+        var sidemenu = document.getElementsByClassName("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxafqBeu8sqguRPWly72shfSbIhD90X-TqLyliom45sbqApJ4yJB8mcRIKbFl6lz24l/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {        
+            msg.innerHTML = "Message send successfully!"
+            setTimeout(function() {
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
